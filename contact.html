@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+
+<html class="light" lang="fr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Contact - Solisis Agency</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "primary": "#D46A00", // Orange Baobab
+                    "secondary": "#870000", // Red Moon
+                    "tertiary": "#1E2D2F", // Gunmetal
+                    "accent": "#F7DBA7", // Yellow Peach
+                    "background": "#f7f9fb",
+                    "surface": "#ffffff",
+                    "on-surface": "#1E2D2F",
+                    "on-surface-variant": "#43474f",
+                    "outline": "#747780",
+                    "surface-container-low": "#f2f4f6",
+                    "surface-container-high": "#e6e8ea",
+                    "surface-container-highest": "#e0e3e5",
+                    "on-primary": "#ffffff",
+                    "on-secondary": "#ffffff",
+                    "primary-container": "#F7DBA7",
+                    "on-primary-container": "#D46A00"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.5rem",
+                    "lg": "1rem",
+                    "xl": "1.5rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Manrope"],
+                    "body": ["Manrope"],
+                    "label": ["Manrope"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body { font-family: 'Manrope', sans-serif; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface min-h-screen flex flex-col">
+<!-- TopNavBar -->
+<header class="sticky top-0 w-full z-50 bg-white/80 backdrop-blur-xl shadow-[0_8px_30px_rgb(15,30,32,0.06)]">
+<nav class="flex justify-between items-center px-8 py-6 max-w-7xl mx-auto w-full">
+<div class="text-2xl font-black text-tertiary tracking-tighter">Solisis Agency</div>
+<div class="hidden md:flex items-center gap-10">
+<a class="font-manrope font-medium tracking-tight text-tertiary/70 hover:text-primary transition-all duration-300" href="#">Accueil</a>
+<a class="font-manrope font-medium tracking-tight text-tertiary/70 hover:text-primary transition-all duration-300" href="#">Services</a>
+<a class="font-manrope font-medium tracking-tight text-primary border-b-2 border-primary pb-1 transition-all duration-300" href="#">Contact</a>
+</div>
+<button class="bg-primary text-on-primary px-8 py-3 rounded-full font-manrope font-medium tracking-tight scale-95 active:scale-90 transition-all duration-300 hover:opacity-80">
+            Démarrer un projet
+        </button>
+</nav>
+</header>
+<main class="flex-grow">
+<!-- Contact Hero & Form Section -->
+<section class="max-w-7xl mx-auto px-8 py-20 lg:py-32">
+<div class="grid lg:grid-cols-2 gap-20 items-start">
+<!-- Content Column -->
+<div class="space-y-12">
+<div class="space-y-6">
+<span class="text-primary font-bold tracking-[0.2em] text-xs uppercase">Parlons de vous</span>
+<h1 class="text-6xl md:text-8xl font-extrabold text-tertiary tracking-tighter leading-[0.9]">
+                        Contactez-nous
+                    </h1>
+<p class="text-xl text-on-surface-variant/80 max-w-md leading-relaxed font-light">
+                        L’expertise créative au service de votre récit. Que vous ayez une idée précise ou un concept en gestation, notre équipe est prête à lui donner vie.
+                    </p>
+</div>
+<!-- Contact Details -->
+<div class="grid sm:grid-cols-2 gap-4">
+<div class="bg-surface-container-low p-8 rounded-lg space-y-4 transition-transform hover:scale-[1.02] duration-500">
+<span class="material-symbols-outlined text-primary text-3xl">alternate_email</span>
+<div>
+<p class="text-xs font-bold text-on-surface-variant/50 uppercase tracking-widest mb-1">Email</p>
+<p class="text-lg font-semibold text-tertiary">contact@solisisagency.com</p>
+</div>
+</div>
+<div class="bg-surface-container-low p-8 rounded-lg space-y-4 transition-transform hover:scale-[1.02] duration-500">
+<span class="material-symbols-outlined text-primary text-3xl">share</span>
+<div>
+<p class="text-xs font-bold text-on-surface-variant/50 uppercase tracking-widest mb-1">Suivez-nous</p>
+<div class="flex gap-4">
+<a class="text-tertiary hover:text-primary transition-colors font-medium" href="#">LinkedIn</a>
+<a class="text-tertiary hover:text-primary transition-colors font-medium" href="#">Instagram</a>
+</div>
+</div>
+</div>
+</div>
+<!-- Decorative Image -->
+<div class="relative h-64 w-full rounded-lg overflow-hidden bg-surface-container-highest">
+<img alt="Interior of a modern creative office" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-1000 opacity-60" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB6t6Gv9Y7P9eOWw4JUfdr1B-ttkMNWrCUknt1EfNbQADm1oFfSRtI5ymGzKiXRYnb-FQBevLLo4OLo07tTd0EHjyKg0LpnXTuJ4tRiBqsdsK0lSufTyWZHWInphYisnZ4j01hpTwSZ0ezZemc5c6g6PTHPvZnA9cjWu4ouao3CpPe_huUMbG3L5ciZyIy4Esu_A-xpdpwVpeOH5WXMl1HeHwDHg5jH2jhvSjjXhMVtzTkEOGLK8uFfVOm7PN8YXdRhyqQz77NHVTPx"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background to-transparent"></div>
+</div>
+</div>
+<!-- Form Column -->
+<div class="relative">
+<div class="absolute -top-20 -right-20 w-64 h-64 bg-primary/10 rounded-full blur-[100px] -z-10"></div>
+<div class="bg-surface p-8 md:p-12 rounded-lg shadow-[0_32px_64px_-16px_rgba(30,45,47,0.08)]">
+<form action="#" class="space-y-8">
+<div class="space-y-2">
+<label class="text-sm font-bold text-tertiary tracking-tight" for="name">Nom complet</label>
+<input class="w-full bg-surface-container-low border-none rounded-md px-6 py-4 focus:ring-2 focus:ring-primary/30 text-on-surface placeholder:text-on-surface-variant/40 transition-all" id="name" name="name" placeholder="Jean Dupont" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="text-sm font-bold text-tertiary tracking-tight" for="email">Adresse email</label>
+<input class="w-full bg-surface-container-low border-none rounded-md px-6 py-4 focus:ring-2 focus:ring-primary/30 text-on-surface placeholder:text-on-surface-variant/40 transition-all" id="email" name="email" placeholder="jean@exemple.com" type="email"/>
+</div>
+<div class="space-y-2">
+<label class="text-sm font-bold text-tertiary tracking-tight" for="message">Votre message</label>
+<textarea class="w-full bg-surface-container-low border-none rounded-md px-6 py-4 focus:ring-2 focus:ring-primary/30 text-on-surface placeholder:text-on-surface-variant/40 transition-all resize-none" id="message" name="message" placeholder="Parlez-nous de votre projet..." rows="5"></textarea>
+</div>
+<button class="w-full bg-tertiary text-on-primary py-5 rounded-full font-bold text-lg hover:bg-primary transition-all active:scale-[0.98] flex justify-center items-center gap-3" type="submit">
+                            Envoyer le message
+                            <span class="material-symbols-outlined text-xl">send</span>
+</button>
+<p class="text-center text-xs text-on-surface-variant/60 font-light italic">
+                            En envoyant ce formulaire, vous acceptez notre politique de confidentialité.
+                        </p>
+</form>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full mt-auto bg-tertiary text-white">
+<div class="max-w-7xl mx-auto px-8 py-16 flex flex-col md:flex-row justify-between items-start gap-8">
+<div class="space-y-6 max-w-sm">
+<div class="text-xl font-bold text-primary">Solisis Agency</div>
+<p class="font-manrope text-sm tracking-wide text-white/60 leading-relaxed">
+                © 2024 Solisis Agency. L’expertise créative au service de votre récit.
+            </p>
+</div>
+<div class="flex flex-wrap gap-12">
+<div class="flex flex-col gap-4">
+<span class="text-xs font-bold text-white/30 uppercase tracking-[0.2em]">Réseaux</span>
+<a class="font-manrope text-sm tracking-wide text-white/60 hover:text-primary transition-colors duration-200" href="#">LinkedIn</a>
+<a class="font-manrope text-sm tracking-wide text-white/60 hover:text-primary transition-colors duration-200" href="#">Instagram</a>
+<a class="font-manrope text-sm tracking-wide text-white/60 hover:text-primary transition-colors duration-200" href="#">Behance</a>
+</div>
+<div class="flex flex-col gap-4">
+<span class="text-xs font-bold text-white/30 uppercase tracking-[0.2em]">Contact</span>
+<a class="font-manrope text-sm tracking-wide text-primary font-bold transition-colors duration-200" href="#">Contact</a>
+<a class="font-manrope text-sm tracking-wide text-white/60 hover:text-primary transition-colors duration-200" href="mailto:contact@solisisagency.com">contact@solisisagency.com</a>
+</div>
+</div>
+</div>
+</footer>
+</body></html>

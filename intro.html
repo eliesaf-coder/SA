@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+
+<html class="light" lang="fr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Solisis Agency | L'expertise créative</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "primary": "#D46A00", // Orange Baobab
+                    "secondary": "#870000", // Red Moon
+                    "tertiary": "#1E2D2F", // Gunmetal
+                    "surface-variant": "#F7DBA7", // Yellow Peach
+                    "background": "#fdfcfb",
+                    "on-surface": "#1E2D2F",
+                    "on-surface-variant": "#43474f",
+                    "outline": "#747780",
+                    "surface-container-low": "#faf8f6",
+                    "surface-container-highest": "#f2eee9",
+                    "primary-container": "#F7DBA7",
+                    "on-primary-container": "#D46A00",
+                    "secondary-container": "#F7DBA7",
+                    "on-secondary-container": "#870000"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.5rem",
+                    "lg": "1rem",
+                    "xl": "1.5rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Manrope"],
+                    "body": ["Manrope"],
+                    "label": ["Manrope"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body { font-family: 'Manrope', sans-serif; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface selection:bg-primary-container selection:text-primary">
+<!-- TopNavBar Component -->
+<header class="sticky top-0 w-full z-50 bg-white/80 dark:bg-slate-900/80 backdrop-blur-xl shadow-[0_8px_30px_rgb(15,30,32,0.06)]">
+<div class="flex justify-between items-center px-8 py-6 max-w-7xl mx-auto w-full">
+<a class="text-2xl font-black text-slate-900 dark:text-cyan-50 tracking-tighter" href="#">Solisis Agency</a>
+<nav class="hidden md:flex items-center space-x-12">
+<a class="font-manrope font-medium tracking-tight text-orange-700 border-b-2 border-orange-700 pb-1 hover:opacity-80 transition-all duration-300" href="#">Accueil</a>
+<a class="font-manrope font-medium tracking-tight text-slate-700/70 hover:text-orange-600 hover:opacity-80 transition-all duration-300" href="#">Services</a>
+<a class="font-manrope font-medium tracking-tight text-slate-700/70 hover:text-orange-600 hover:opacity-80 transition-all duration-300" href="#">Réalisations</a>
+<a class="font-manrope font-medium tracking-tight text-slate-700/70 hover:text-orange-600 hover:opacity-80 transition-all duration-300" href="#">Contact</a>
+</nav>
+<button class="bg-primary text-white px-8 py-3 rounded-full font-bold scale-95 active:scale-90 transition-transform hover:opacity-80">
+            Démarrer un projet
+        </button>
+</div>
+</header>
+<main>
+<!-- Hero Section -->
+<section class="relative min-h-[850px] flex items-center justify-center pt-20 px-8 overflow-hidden bg-background">
+<div class="absolute top-[-10%] right-[-10%] w-[500px] h-[500px] bg-primary/5 rounded-full blur-[120px]"></div>
+<div class="absolute bottom-[-5%] left-[-5%] w-[400px] h-[400px] bg-secondary/5 rounded-full blur-[100px]"></div>
+<div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center relative z-10">
+<div class="flex flex-col space-y-8">
+<span class="label-md uppercase tracking-[0.2em] text-primary font-bold">L'expertise narrative</span>
+<h1 class="text-7xl md:text-8xl font-black tracking-tighter text-tertiary leading-[0.9]">
+                    De la vision à <br/><span class="text-primary">l’impact.</span>
+</h1>
+<p class="text-xl text-on-surface-variant max-w-xl leading-relaxed">
+                    Solisis transforme vos ambitions en récits mémorables. Nous fusionnons stratégie audacieuse et création d'exception pour propulser votre marque.
+                </p>
+<div class="flex flex-wrap gap-6 pt-4">
+<button class="bg-tertiary text-white px-10 py-5 rounded-lg font-bold text-lg shadow-xl hover:shadow-2xl transition-all duration-300 active:scale-95">
+                        Demander un devis
+                    </button>
+<button class="bg-surface-variant text-primary px-10 py-5 rounded-lg font-bold text-lg hover:bg-primary-container transition-all duration-300 active:scale-95">
+                        Découvrir nos services
+                    </button>
+</div>
+</div>
+<div class="relative group">
+<div class="aspect-[4/5] rounded-lg overflow-hidden shadow-2xl relative">
+<img alt="Equipe créative travaillant sur un projet" class="w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDiV7ZlX16oprsYVA-hUrS1qqmhcqzUI2X8I6eEnWTjMABQEdP9hgWGV7tIosNAh8_UQ6hVKg6XIGtQpwkdlkq1F9lPdnvZD1kbr75HbqnqTRZzgMledrRLLsy0J2ovtOXVnxOLQRAtnfo3A-5HJtpHiS2WOLVnXy8ZPG9OfRKsxkgB2slrQa6XN8BN8J16K5iiJrDGbTADvQi-5RWiXwvIt_rk2IxAHST4NLoyyKSNZjvhGA2SHRKxoulzID9WLI25JLFAMBVy6hBg"/>
+<div class="absolute inset-0 bg-tertiary/10 group-hover:bg-transparent transition-colors duration-500"></div>
+</div>
+<div class="absolute -bottom-8 -left-8 bg-primary p-8 rounded-lg shadow-xl max-w-[240px]">
+<p class="text-white font-black text-4xl italic">100+</p>
+<p class="text-white/90 font-medium text-sm mt-2">Projets livrés avec une excellence narrative.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- About Section -->
+<section class="py-32 px-8 bg-surface-container-low">
+<div class="max-w-7xl mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-12">
+<div class="md:col-span-5">
+<h2 class="text-4xl font-black text-tertiary tracking-tight leading-tight">
+                        Nous ne créons pas seulement des contenus, nous bâtissons des héritages.
+                    </h2>
+</div>
+<div class="md:col-span-7 flex flex-col space-y-8">
+<p class="text-xl text-on-surface-variant leading-relaxed">
+                        Fondée sur le principe de l'épure narrative, Solisis Agency accompagne les entreprises qui souhaitent sortir du bruit numérique. Notre approche combine une rigueur stratégique implacable avec une créativité sans compromis.
+                    </p>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-8 pt-8">
+<div class="space-y-3">
+<span class="material-symbols-outlined text-primary text-4xl" data-icon="lightbulb" data-weight="fill">lightbulb</span>
+<h3 class="font-bold text-xl text-tertiary">Créativité Pure</h3>
+<p class="text-on-surface-variant">L'esthétique au service du message, sans artifice inutile.</p>
+</div>
+<div class="space-y-3">
+<span class="material-symbols-outlined text-primary text-4xl" data-icon="insights" data-weight="fill">insights</span>
+<h3 class="font-bold text-xl text-tertiary">Impact Mesurable</h3>
+<p class="text-on-surface-variant">Chaque pixel et chaque mot sont orientés vers vos objectifs business.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Services Preview - Bento Grid -->
+<section class="py-32 px-8 bg-background">
+<div class="max-w-7xl mx-auto">
+<div class="flex justify-between items-end mb-16">
+<div class="max-w-2xl">
+<span class="label-md uppercase tracking-[0.2em] text-primary font-bold block mb-4">Nos Domaines</span>
+<h2 class="text-5xl font-black text-tertiary tracking-tighter">Une expertise pluridisciplinaire.</h2>
+</div>
+<a class="hidden md:flex items-center gap-2 text-tertiary font-bold hover:text-primary transition-colors group" href="#">
+                    Tous les services <span class="material-symbols-outlined group-hover:translate-x-2 transition-transform" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+<!-- Audit & Stratégie -->
+<div class="md:col-span-2 bg-white p-10 rounded-lg border border-surface-variant/30 hover:shadow-xl transition-all duration-500 flex flex-col justify-between group">
+<div>
+<span class="material-symbols-outlined text-primary text-5xl mb-8 block" data-icon="query_stats">query_stats</span>
+<h3 class="text-3xl font-black text-tertiary mb-4">Audit &amp; Stratégie</h3>
+<p class="text-on-surface-variant text-lg leading-relaxed mb-8">Analyse profonde de votre positionnement pour définir une trajectoire de croissance authentique.</p>
+</div>
+<a class="text-primary font-bold flex items-center gap-2" href="#">En savoir plus <span class="material-symbols-outlined text-sm" data-icon="north_east">north_east</span></a>
+</div>
+<!-- Vidéographie -->
+<div class="md:col-span-2 relative h-[400px] rounded-lg overflow-hidden group">
+<img alt="Production vidéo" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDXfwTYkSEPnwEn5Jla63MC7vJmfutVde_3P8IX3hb6F5Jajf4gXxVi3oT_6kqp5t_cYKKye7uLUa4L4CUJgFs3RfK4WOp-I_SmQjOMSIn-UP7cB6mHLZM7RyFGkzv5Gul1YP3ZDvhT9aw4EvrdMS7osvMSvPtZJbfJKT4EQO4GCF0lcCV_ikhfvhQFt-s413tGQcog15DC5MpgKstqXBXVCC_w71jDCHps6IfwQYPXAnVDD5kvgLemSiqJBpxReT2xEDCRRRmuv74u"/>
+<div class="absolute inset-0 bg-gradient-to-t from-tertiary/90 via-tertiary/20 to-transparent p-10 flex flex-col justify-end">
+<h3 class="text-3xl font-black text-white mb-2">Vidéographie</h3>
+<p class="text-white/80 mb-6">Le mouvement qui captive et convertit.</p>
+<span class="material-symbols-outlined text-white text-4xl" data-icon="play_circle">play_circle</span>
+</div>
+</div>
+<!-- Réseaux sociaux -->
+<div class="md:col-span-2 bg-tertiary p-10 rounded-lg flex flex-col justify-between group">
+<div class="flex justify-between items-start">
+<span class="material-symbols-outlined text-primary-container text-5xl" data-icon="diversity_3">diversity_3</span>
+<div class="w-12 h-12 rounded-full border border-white/20 flex items-center justify-center text-white group-hover:bg-white group-hover:text-tertiary transition-all">
+<span class="material-symbols-outlined" data-icon="add">add</span>
+</div>
+</div>
+<div class="mt-20">
+<h3 class="text-3xl font-black text-white mb-4">Réseaux Sociaux</h3>
+<p class="text-white/70 text-lg leading-relaxed">Engagez votre communauté avec une gestion de contenu sociale-first et une direction artistique soignée.</p>
+</div>
+</div>
+<!-- Photographie -->
+<div class="md:col-span-2 bg-primary-container p-10 rounded-lg flex flex-col justify-between group">
+<div>
+<span class="material-symbols-outlined text-primary text-5xl mb-8 block" data-icon="photo_camera">photo_camera</span>
+<h3 class="text-3xl font-black text-primary mb-4">Photographie</h3>
+<p class="text-primary/80 text-lg leading-relaxed mb-8">L'image fixe comme pilier de votre identité visuelle haut de gamme.</p>
+</div>
+<div class="flex -space-x-4 overflow-hidden">
+<img class="inline-block h-12 w-12 rounded-full ring-2 ring-primary-container object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDI86FxmEyFe4-nPMYlKBOmPqW0l0nArz2BsMDxa8Q149nsByjmcWv0opc6qPX-Q5WmNm1dNzjMpBFKzcmJpZXpMKtDOamOJEz4KInEwHzTxGzxOleSU9L9DZUQ0YflAiLqY3KySE6jWC1tb96MRCpMnWuLsC7EERPz-HOlFqusRvresHxfhcO-rpyuNB2-bbPkZsUOleuAfWTucTz6zPdAboHdgYHkuK9EQnbGueBh1e-qY-WQgVNmE5-NhUc_0G52mS4RYcF8BxEF"/>
+<img class="inline-block h-12 w-12 rounded-full ring-2 ring-primary-container object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA2eJe1oV8Tw0-IDgWyx4VHKilj3Hp-kK3ZljQ1UKY__idzbh2Z7rUWRlUD9cFcOk6Qw2MFKVMackY5f2n8aq7HSZwS-AbIjr0m7N-ROsUWfluyg1skfJpVmFmSIX1tK3FiRQ-9_l_J777gDIPMXn71fbR_stmCeNyPKByVdJcVdv9CQLB7HV4b9W7uUf0W76NY8xRRKIIvPIhk4d0XPaXdJKV-JzrEmguG35V4qi2sdfm_oNAu8rLHc3jv3eDl5yP50nlEoyXamYwR"/>
+<img class="inline-block h-12 w-12 rounded-full ring-2 ring-primary-container object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBVD7tEkXi8GFrUn_c94UjF4xQYhoaZyTCt_Sy6QPWf-P4FxJhcm1nwxp8GXqTjX6eOZxs5wU72LI-xxu-vDCwPLh1qWnSoEzoHOonMLOJlHYPyO-m93cowsHsvfDuPHUtf38CvijbyQduNX7VbDyKTuv8JdQCgn0qQnCzffWNFhc5NS2Oq9mwExEL3aJOxJSUfkbngvEhpdPTYkk2VE5NbjX2QfcwPLfPSfLUZtpdNW3RsBIZ-qIp-Tx-Jh_jXD2TpiLW_7KaRfZ7A"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Why Choose Us Section -->
+<section class="py-32 px-8 bg-surface-container-low relative overflow-hidden">
+<div class="max-w-7xl mx-auto">
+<div class="text-center mb-24">
+<span class="label-md uppercase tracking-[0.2em] text-primary font-bold block mb-4">Pourquoi nous ?</span>
+<h2 class="text-5xl font-black text-tertiary tracking-tighter">L'excellence comme standard.</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+<div class="bg-white p-12 rounded-lg text-center space-y-6 shadow-sm">
+<div class="w-20 h-20 bg-primary-container rounded-full flex items-center justify-center mx-auto">
+<span class="material-symbols-outlined text-primary text-4xl" data-icon="hub">hub</span>
+</div>
+<h3 class="text-2xl font-black text-tertiary">Approche Stratégique</h3>
+<p class="text-on-surface-variant leading-relaxed">Nous analysons avant de créer. Chaque choix artistique est justifié par un objectif stratégique clair.</p>
+</div>
+<div class="bg-white p-12 rounded-lg text-center space-y-6 shadow-sm">
+<div class="w-20 h-20 bg-primary-container rounded-full flex items-center justify-center mx-auto">
+<span class="material-symbols-outlined text-primary text-4xl" data-icon="auto_awesome">auto_awesome</span>
+</div>
+<h3 class="text-2xl font-black text-tertiary">Créativité Illimitée</h3>
+<p class="text-on-surface-variant leading-relaxed">Nous repoussons les frontières du design conventionnel pour offrir des expériences visuelles uniques.</p>
+</div>
+<div class="bg-white p-12 rounded-lg text-center space-y-6 shadow-sm">
+<div class="w-20 h-20 bg-primary-container rounded-full flex items-center justify-center mx-auto">
+<span class="material-symbols-outlined text-primary text-4xl" data-icon="handshake">handshake</span>
+</div>
+<h3 class="text-2xl font-black text-tertiary">Accompagnement</h3>
+<p class="text-on-surface-variant leading-relaxed">Vous n'êtes pas un client, mais un partenaire. Nous marchons à vos côtés à chaque étape du projet.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="py-24 px-8">
+<div class="max-w-7xl mx-auto bg-tertiary rounded-lg overflow-hidden relative min-h-[500px] flex items-center">
+<div class="absolute right-0 top-0 w-1/2 h-full hidden lg:block">
+<img alt="Collaboration d'équipe" class="w-full h-full object-cover opacity-20 grayscale hover:grayscale-0 transition-all duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA5WPWr7LpryvrX0x8rgLBBZXPKW9tDRbzTSccH8q1Hzuh-LUCQNZyIj0JP-qZPqv7iv7Taww0tjSutRHCSdSLZeCIINFT9hHbfUXidFU1KXembYPREmPK7stoQ-sDFWL9CzcEzyvUS_RCy2sTHVtjo1inh4oG6kX_HNqoud8y8UPZvopGRgcDozsKlsNDMiqn2GRZKGENt9F-5-xQ2EsmFdWyVhFcBlzZdsuMdrsFYwAxq0kEc-eRGeJurQJNjZY4iwqQkHR8B-MCU"/>
+</div>
+<div class="relative z-10 p-12 lg:p-24 max-w-2xl">
+<h2 class="text-5xl md:text-6xl font-black text-white leading-tight mb-8">Parlons de votre projet</h2>
+<p class="text-xl text-white/70 mb-12">Prêt à transformer votre présence de marque ? Notre équipe est prête à donner vie à vos idées les plus audacieuses.</p>
+<button class="bg-primary text-white px-12 py-5 rounded-lg font-black text-xl hover:bg-orange-600 transition-all duration-300 shadow-2xl flex items-center gap-4 active:scale-95">
+                    Démarrer l'aventure <span class="material-symbols-outlined" data-icon="trending_flat">trending_flat</span>
+</button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer Component -->
+<footer class="w-full mt-auto bg-slate-900 dark:bg-black text-cyan-50">
+<div class="max-w-7xl mx-auto px-8 py-16 flex flex-col md:flex-row justify-between items-start gap-8">
+<div class="space-y-6 max-w-sm">
+<a class="text-xl font-bold text-orange-500" href="#">Solisis Agency</a>
+<p class="font-manrope text-sm tracking-wide text-cyan-50/60">
+                L’expertise créative au service de votre récit. Nous façonnons le futur des marques avec élégance et intention.
+            </p>
+</div>
+<div class="grid grid-cols-2 gap-12 md:gap-24">
+<div class="space-y-4">
+<h4 class="font-bold text-cyan-50/40 uppercase text-xs tracking-widest">Navigation</h4>
+<ul class="space-y-3 font-manrope text-sm tracking-wide">
+<li><a class="text-orange-400 font-bold hover:text-orange-500 transition-colors duration-200" href="#">Accueil</a></li>
+<li><a class="text-cyan-50/60 hover:text-cyan-50 hover:text-orange-500 transition-colors duration-200" href="#">Services</a></li>
+<li><a class="text-cyan-50/60 hover:text-cyan-50 hover:text-orange-500 transition-colors duration-200" href="#">Contact</a></li>
+</ul>
+</div>
+<div class="space-y-4">
+<h4 class="font-bold text-cyan-50/40 uppercase text-xs tracking-widest">Social</h4>
+<ul class="space-y-3 font-manrope text-sm tracking-wide">
+<li><a class="text-cyan-50/60 hover:text-cyan-50 hover:text-orange-500 transition-colors duration-200" href="#">LinkedIn</a></li>
+<li><a class="text-cyan-50/60 hover:text-cyan-50 hover:text-orange-500 transition-colors duration-200" href="#">Instagram</a></li>
+<li><a class="text-cyan-50/60 hover:text-cyan-50 hover:text-orange-500 transition-colors duration-200" href="#">Behance</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="max-w-7xl mx-auto px-8 py-8 border-t border-cyan-50/10 flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="font-manrope text-sm tracking-wide text-cyan-50/40">© 2024 Solisis Agency. L’expertise créative au service de votre récit.</p>
+<div class="flex gap-8 font-manrope text-sm tracking-wide text-cyan-50/40">
+<a class="hover:text-cyan-50 transition-colors" href="#">Mentions Légales</a>
+<a class="hover:text-cyan-50 transition-colors" href="#">Confidentialité</a>
+</div>
+</div>
+</footer>
+</body></html>

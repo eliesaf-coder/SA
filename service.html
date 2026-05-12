@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+
+<html class="light" lang="fr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "primary": "#D46A00", // Orange Baobab
+                    "secondary": "#870000", // Red Moon
+                    "tertiary": "#F7DBA7", // Yellow Peach
+                    "neutral-dark": "#1E2D2F", // Gunmetal
+                    "background": "#fdfdfd",
+                    "surface": "#ffffff",
+                    "on-surface": "#1E2D2F",
+                    "on-surface-variant": "#43474f",
+                    "outline": "#747780",
+                    "surface-container-low": "#fcf5ed",
+                    "surface-container-highest": "#f7dba7",
+                    "on-primary": "#ffffff",
+                    "primary-container": "#fcecd9",
+                    "secondary-container": "#f7dba7",
+                    "on-secondary-container": "#870000"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.5rem", // ROUND_EIGHT
+                    "lg": "1rem",
+                    "xl": "1.5rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Manrope"],
+                    "body": ["Manrope"],
+                    "label": ["Manrope"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 200, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-nav {
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body selection:bg-tertiary selection:text-secondary">
+<!-- TopNavBar (Shared Component) -->
+<header class="sticky top-0 w-full z-50 bg-white/80 backdrop-blur-xl dark:bg-slate-900/80 shadow-[0_8px_30px_rgb(15,30,32,0.06)]">
+<nav class="flex justify-between items-center px-8 py-6 max-w-7xl mx-auto w-full">
+<div class="text-2xl font-black text-slate-900 dark:text-cyan-50 tracking-tighter">
+            Solisis Agency
+        </div>
+<div class="hidden md:flex items-center gap-10 font-manrope font-medium tracking-tight">
+<a class="text-slate-700/70 dark:text-cyan-50/70 hover:text-primary hover:opacity-80 transition-all duration-300" href="#">Accueil</a>
+<a class="text-primary dark:text-primary border-b-2 border-primary pb-1 hover:opacity-80 transition-all duration-300" href="#">Services</a>
+<a class="text-slate-700/70 dark:text-cyan-50/70 hover:text-primary hover:opacity-80 transition-all duration-300" href="#">Réalisations</a>
+<a class="text-slate-700/70 dark:text-cyan-50/70 hover:text-primary hover:opacity-80 transition-all duration-300" href="#">Contact</a>
+</div>
+<button class="bg-neutral-dark text-white px-8 py-3 rounded-full font-bold scale-95 active:scale-90 transition-transform hover:opacity-80 duration-300">
+            Démarrer un projet
+        </button>
+</nav>
+</header>
+<main class="max-w-7xl mx-auto px-8">
+<!-- Intro Section -->
+<section class="py-24 md:py-32 flex flex-col items-start gap-8 border-none">
+<span class="text-primary font-bold tracking-[0.2em] text-sm uppercase">L'expertise Solisis</span>
+<h1 class="text-6xl md:text-8xl font-black text-neutral-dark tracking-tighter leading-[1] max-w-4xl">
+            Nos services
+        </h1>
+<p class="text-xl md:text-2xl text-on-surface-variant max-w-2xl leading-relaxed">
+            Nous transformons vos ambitions en récits visuels percutants. Une approche holistique où la stratégie rencontre l'art de l'image.
+        </p>
+</section>
+<!-- Services Grid (Bento Style) -->
+<section class="pb-32 grid grid-cols-1 md:grid-cols-12 gap-8">
+<!-- 1. Audit & Stratégie -->
+<div class="md:col-span-7 group relative overflow-hidden bg-surface-container-low rounded-lg p-10 flex flex-col justify-between min-h-[450px]">
+<div class="relative z-10 flex flex-col gap-6">
+<div class="w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-primary text-4xl" data-icon="troubleshoot">troubleshoot</span>
+</div>
+<h3 class="text-4xl font-extrabold text-neutral-dark tracking-tight">Audit &amp; Stratégie</h3>
+<p class="text-lg text-on-surface-variant max-w-md leading-relaxed">
+                    Nous identifions vos opportunités de croissance et définissons une trajectoire de communication précise pour ancrer votre marque dans l'excellence.
+                </p>
+</div>
+<div class="relative z-10 pt-8">
+<button class="flex items-center gap-2 text-primary font-bold hover:gap-4 transition-all duration-300">
+                    Nous contacter
+                    <span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+<div class="absolute top-0 right-0 w-1/2 h-full opacity-10 group-hover:opacity-20 transition-opacity duration-700 pointer-events-none">
+<img alt="" class="w-full h-full object-cover" data-alt="clean abstract visualization of data charts and strategic planning layouts" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD7W5xhpllCfHTBYjY0E3b1f29beUw-Svc6gTKzUhIl9woE71dYZGg89L9M4zg221rUljoG3qaL6JgJVoa5pnFX1uTSaRubqNsExPVfFvdQSTuN3la4HbwjEmQ8tj_mT4JNrMZnSWQI465LwXOGJNrT6k-n_OottYvBUTGl0dlS7MRUz93UJanu26U0Y5-rpudkO5aBuK9v45OP2C9QzPjGCnp6xlNiHcrv5I8Vlgs9PPrMkNPsANpccJ6TuQJ9Zn9QYtvI4S8tvI5E"/>
+</div>
+</div>
+<!-- 2. Vidéographie -->
+<div class="md:col-span-5 group relative overflow-hidden bg-neutral-dark rounded-lg p-10 flex flex-col justify-between min-h-[450px]">
+<div class="relative z-10 flex flex-col gap-6">
+<div class="w-16 h-16 bg-white/10 backdrop-blur-md rounded-full flex items-center justify-center border border-white/10">
+<span class="material-symbols-outlined text-tertiary text-4xl" data-icon="movie_filter">movie_filter</span>
+</div>
+<h3 class="text-4xl font-extrabold text-white tracking-tight">Vidéographie</h3>
+<p class="text-lg text-white/70 leading-relaxed">
+                    Un contenu vidéo engageant conçu pour le storytelling moderne. Captivez votre audience avec des productions cinématographiques.
+                </p>
+</div>
+<div class="relative z-10 pt-8">
+<button class="flex items-center gap-2 text-tertiary font-bold hover:gap-4 transition-all duration-300">
+                    Nous contacter
+                    <span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+<div class="absolute inset-0 opacity-20 pointer-events-none">
+<img alt="" class="w-full h-full object-cover grayscale" data-alt="cinematic close-up of a professional film camera lens" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD5Q52N14GmjfroR_wG-Hh3VSnAexHmRdnUEx-arG5m89CeQ88iQS1Ty6kjWbVLWt6UD4F3UCYbT3THTAWhcDvzI7TwOiTSRczOr9jBp3JHZVRgBmZJnpteqRIDWS4PioCaocmqaEmfs8AopDrCT8LqFRmq_I_7tuTLqQxqldmsyzErBH5YfopmfNrgNSefhULqxd871i6QY2mK7IFmvnc7x-mlsyjMkc5mPlP-K5eLWi8sDX0mI7AdvNwFcQswCqfol2H8YlsYE4hX"/>
+</div>
+</div>
+<!-- 3. Réseaux sociaux -->
+<div class="md:col-span-5 group relative overflow-hidden bg-tertiary rounded-lg p-10 flex flex-col justify-between min-h-[450px]">
+<div class="relative z-10 flex flex-col gap-6">
+<div class="w-16 h-16 bg-white/60 rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined text-secondary text-4xl" data-icon="hub">hub</span>
+</div>
+<h3 class="text-4xl font-extrabold text-secondary tracking-tight">Réseaux sociaux</h3>
+<p class="text-lg text-secondary/80 leading-relaxed">
+                    Un engagement authentique aligné sur votre identité de marque. Nous gérons votre présence pour créer une communauté fidèle.
+                </p>
+</div>
+<div class="relative z-10 pt-8">
+<button class="flex items-center gap-2 text-secondary font-bold hover:gap-4 transition-all duration-300">
+                    Nous contacter
+                    <span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- 4. Photographie -->
+<div class="md:col-span-7 group relative overflow-hidden bg-surface-container-highest rounded-lg p-10 flex flex-col justify-between min-h-[450px]">
+<div class="relative z-10 flex flex-col gap-6">
+<div class="w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-primary text-4xl" data-icon="camera">camera</span>
+</div>
+<h3 class="text-4xl font-extrabold text-neutral-dark tracking-tight">Photographie</h3>
+<p class="text-lg text-on-surface-variant max-w-md leading-relaxed">
+                    Des visuels professionnels haute fidélité qui subliment votre image de marque. La précision au service de l'esthétique.
+                </p>
+</div>
+<div class="relative z-10 pt-8">
+<button class="flex items-center gap-2 text-primary font-bold hover:gap-4 transition-all duration-300">
+                    Nous contacter
+                    <span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+<div class="absolute right-0 bottom-0 w-2/3 h-full pointer-events-none opacity-40">
+<img alt="" class="w-full h-full object-cover" data-alt="minimalist architectural photography showing clean geometric lines" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDy6MQC3f2EPMTpnvPpqRtfZ2epAvZ1lmX3CkV4M8GqMwFdxae34k_KGX2pdClSkjcfx_vEV0AmT3wKbpG0bdRzapTxrLulqphfGGvxz0B9EFwlf4mLx4KkRWg9_-hZ49vKFo5PmmQhWP0E94FRIppvMWQg-7XQkO3wMe9yV5837GWHD4mfqUlLsRV7iesjry8MfnhVH9-bucWio1X98GzjiDJbahlRfFc9X6xqXIhxaxk-bLHahXX3WYPsU3mlWfGsex_9Ia7PQl8E"/>
+</div>
+</div>
+</section>
+<!-- Final CTA Section -->
+<section class="mb-32 py-24 bg-neutral-dark rounded-lg flex flex-col items-center text-center gap-10 px-8 relative overflow-hidden">
+<div class="absolute inset-0 opacity-10 pointer-events-none">
+<div class="absolute top-0 left-0 w-96 h-96 bg-primary blur-[120px] rounded-full"></div>
+<div class="absolute bottom-0 right-0 w-96 h-96 bg-secondary blur-[120px] rounded-full"></div>
+</div>
+<h2 class="text-5xl md:text-7xl font-black text-white tracking-tighter leading-tight max-w-4xl relative z-10">
+            Prêt à écrire votre <span class="text-tertiary">prochain chapitre</span> ?
+        </h2>
+<p class="text-white/60 text-lg md:text-xl max-w-2xl relative z-10">
+            Contactez notre équipe créative pour une consultation personnalisée et donnez vie à votre vision.
+        </p>
+<button class="bg-primary text-white px-12 py-5 rounded-full font-black text-lg scale-95 active:scale-90 transition-transform hover:opacity-90 duration-300 relative z-10">
+            Nous contacter
+        </button>
+</section>
+</main>
+<!-- Footer (Shared Component) -->
+<footer class="w-full mt-auto bg-slate-900 dark:bg-black text-cyan-50">
+<div class="max-w-7xl mx-auto px-8 py-16 flex flex-col md:flex-row justify-between items-start gap-8 font-manrope text-sm tracking-wide">
+<div class="flex flex-col gap-4">
+<span class="text-xl font-bold text-orange-500">Solisis Agency</span>
+<p class="max-w-xs text-cyan-50/60">
+                © 2024 Solisis Agency. L’expertise créative au service de votre récit.
+            </p>
+</div>
+<div class="flex flex-wrap gap-x-12 gap-y-6">
+<div class="flex flex-col gap-3">
+<span class="text-cyan-50 font-bold opacity-30 uppercase tracking-widest text-xs">Réseaux</span>
+<a class="text-cyan-50/60 hover:text-orange-500 transition-colors duration-200" href="#">LinkedIn</a>
+<a class="text-cyan-50/60 hover:text-orange-500 transition-colors duration-200" href="#">Instagram</a>
+<a class="text-cyan-50/60 hover:text-orange-500 transition-colors duration-200" href="#">Behance</a>
+</div>
+<div class="flex flex-col gap-3">
+<span class="text-cyan-50 font-bold opacity-30 uppercase tracking-widest text-xs">Agence</span>
+<a class="text-cyan-50/60 hover:text-orange-500 transition-colors duration-200" href="#">Contact</a>
+<a class="text-cyan-50/60 hover:text-orange-500 transition-colors duration-200" href="#">Mentions Légales</a>
+</div>
+</div>
+</div>
+</footer>
+</body></html>
